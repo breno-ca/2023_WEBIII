@@ -6,6 +6,13 @@ use Illuminate\Http\Request;
 
 class SeriesController extends Controller
 {
+
+    public function create(){
+        return view('series.create');
+    }
+
+
+
     public function listarSeries()
     {
         $series = [
@@ -13,11 +20,11 @@ class SeriesController extends Controller
             "Grey's Anatomy",
             "Agents of SHIELDS"
         ];
-        
+
         //Chamando a view e passando uma variável
         //Versão compacta
         return view('series.index', compact('series'));
-        
+
         //Versão original
         //return view('series.index', ['series' => $series]);
 

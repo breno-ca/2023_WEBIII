@@ -45,8 +45,10 @@ Route::get('/adicionar-produto/{param1}/{param2?}', function($p1, $p2 = null) {
 Route::get('/listarSeries', [SeriesController::class, 'listarSeries']);
 Route::get('/home', HomeController::class);
 
+Route::get('/series/criar',[SeriesController::class, 'create']);
+
 //Exercício
-//Criar 2 novas rotas para o HomeController. Você vai definir o 
+//Criar 2 novas rotas para o HomeController. Você vai definir o
 //nome dos métodos (ações) e vai definir o retorno desses métodos.
 
 /*
